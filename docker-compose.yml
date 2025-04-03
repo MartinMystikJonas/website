@@ -1,0 +1,10 @@
+services:
+  node:
+    image: "node:current"
+    user: "node"
+    working_dir: /home/node/app/src
+    volumes:
+      - ./:/home/node/app
+    entrypoint: /bin/bash
+    tty: true
+    stdin_open: true

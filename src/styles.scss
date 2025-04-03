@@ -3,16 +3,13 @@
 // https://github.com/metafizzy/flickity/issues/754
 @import "~flickity/css/flickity.css";
 
-// Import Lato Google Font
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
-
 // Update Bulma's global variables
-$family-sans-serif: "Lato", sans-serif;
+$family-sans-serif: "Arial", sans-serif;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // More theme colors could be added here...
-$primary: #454545;
+$primary: #348ceb;
 
 $spaces: ("0": 0, "1": 1.65rem, "2": 1.75rem);
 
@@ -32,7 +29,7 @@ a.icon > strong {margin-left:.25rem}
 @import "~bulma/bulma"; 
 
 // override specific bulma styles
-.section {padding: 2.15rem 1.5rem}
+.section {padding: 1.75rem 1.5rem}
 
 @function theme-color($key: "primary") {
     @return map-get($theme-colors, $key);
@@ -42,4 +39,53 @@ a.icon > strong {margin-left:.25rem}
 .carousel-cell {width:100%}
 // Flickity - end
 
- 
+.subtitle {
+  font-size: 1.25rem;
+}
+
+.hero.is-primary {
+    background-color: #348ceb;
+    color: #fff;
+}
+
+.intro p {
+  margin-bottom: .5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tile.is-child {
+  padding: 1.25rem 1.5rem .5rem;
+  text-align: center;
+}
+
+.tile.is-child h2 {
+  margin-bottom: 0;
+}
+
+figure.img-icon {
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+}
+
+.hero-body {
+  padding-top: .5rem;
+}
+
+.tagline {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.tagline .tag {
+  margin-bottom: 5px;
+}
+
+.image.is-180x180{height:180px;width:180px}
+
+a {
+  color: #348ceb;
+}
